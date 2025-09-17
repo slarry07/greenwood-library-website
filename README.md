@@ -1,20 +1,24 @@
-
-# Greenwood Community Library Website
+# Greenwood Community Library Website Enhancement
 
 ## Project Overview
-This project is part of a capstone assignment to enhance the **Greenwood Community Library** website.  
-The goal is to make the site more engaging and informative for visitors while maintaining a simple structure.
+This project enhances the **Greenwood Community Library** website to make it more engaging for visitors.  
+The site already has four sections: Home, About Us, Events, and Contact Us.  
+Enhancements include:  
+- Adding a new **Book Reviews** section  
+- Updating the **Events** page with upcoming community events  
 
-## Features
-- **Home Page** – Introduction and welcome message  
-- **About Us** – Information about the library and its mission  
-- **Events** – Upcoming community and library events  
-- **Contact Us** – Ways for visitors to get in touch  
+Two contributors are simulated:  
+- **Morgan** → adds the Book Reviews section  
+- **Jamie** → updates the Events page  
+
+## Objectives
+- Practice Git branching and collaboration  
+- Simulate real-world teamwork with feature branches  
+- Document changes clearly in commits and pull requests  
 
 ## Tech Stack
 - HTML5  
-- CSS3 (optional enhancements can be added)  
-- Git & GitHub for version control  
+- Git & GitHub  
 
 ## Project Structure
 .
@@ -22,20 +26,38 @@ The goal is to make the site more engaging and informative for visitors while ma
 ├── about_us.html
 ├── events.html
 ├── contact_us.html
+├── book_reviews.html   # Added by Morgan
 └── README.md
 
 
+## Git Workflow
+1. **Create main branch** with base files.  
+2. **Morgan** works on `book-reviews` branch:  
+   - Adds `book_reviews.html`  
+   - Commits and pushes changes  
+   - Opens PR → merge into main  
+3. **Jamie** works on `update-events` branch:  
+   - Updates `events.html` with new event details  
+   - Commits and pushes changes  
+   - Opens PR → merge into main  
+4. **Merge Strategy**: Use pull requests to simulate collaboration.  
+
 ## Getting Started
-1. Clone the repository:
+1. Clone repo:
    ```bash
-   git clone https://github.com/<your-username>/greenwood-library-website.git
-Navigate into the project folder:
-cd greenwood-library-website
+   git clone https://github.com/<your-username>/greenwood-library.git
+   cd greenwood-library
+2. Open HTML files in a browser.
+3. Review feature branches (book-reviews, update-events) in GitHub.
 
+Contributors
 
-2. Open any .html file in your browser.
+Morgan → Book Reviews section
+git commit -m "Add new Book Reviews page with sample content"
+git commit -m "Link Book Reviews page from navigation menu"
+git commit -m "Refine Book Reviews layout for readability"
 
-Git Workflow
-Work on feature branches (update-events, update-contact, etc.)
-Commit changes with meaningful messages
-Push your branch and create a Pull Request into main
+Jamie → Events page updates
+git commit -m "Update Events page with upcoming library workshops"
+git commit -m "Add community meetup details to Events page"
+git commit -m "Improve Events page formatting for clarity"
